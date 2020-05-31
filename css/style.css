@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    animation: square 5s 2s 50 linear, squarecolor 2s 50 linear;
+}
+
+@keyframes square {
+
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: calc(100% - 200px);
+    }
+
+
+    50% {
+        margin-left: calc(100% - 200px);
+    }
+
+    80% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+
+}
+
+@keyframes squarecolor {
+    0% {
+        background-color: yellow;
+    }
+
+    20% {
+        background-color: purple;
+    }
+
+    60% {
+        background-color: orangered;
+    }
+
+    80% {
+        background-color: deepskyblue
+    }
+
+    100% {
+        background-color: chartreuse;
+    }
+}
